@@ -1,0 +1,195 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.input-group i {
+    margin-right: 0.5rem;
+    color: #888;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+.remember-me input {
+    margin-right: 0.5rem;
+}
+
+.login-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 500;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.additional-links {
+    margin-top: 1rem;
+}
+
+.additional-links a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.additional-links a:hover {
+    text-decoration: underline;
+}
+
+.additional-links p {
+    margin-top: 0.5rem;
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-box {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 700px; 
+}
+
+.register-box h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+/* pembagian form */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-column {
+    width: 48%; 
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.input-group i {
+    margin-right: 0.5rem;
+    color: #888;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.register-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 500;
+}
+
+.register-button:hover {
+    background-color: #0056b3;
+}
+
+.full-width {
+    width: 100%; /* Untuk elemen yang membutuhkan satu baris penuh */
+}
+
+@media (max-width: 768px) {
+    .register-box {
+        width: 90%; /* Mengurangi lebar  */
+        padding: 1.5rem; /* Mengurangi padding */
+    }
+    
+    .form-column {
+        width: 100%; /* Kolom menjadi satu baris penuh pada perangkat kecil */
+    }
+    
+    .login-box {
+        width: 90%; /* Mengurangi lebar  */
+        padding: 1.5rem; /* Mengurangi padding */
+    }
+}
+
+
+@media (max-width: 480px) {
+    .input-group {
+        flex-direction: column; /* Menyusun elemen input jadi vertikal */
+    }
+
+    .input-group i {
+        margin-bottom: 0.5rem; /* Memberikan jarak dibawah ikon */
+    }
+}
