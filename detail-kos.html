@@ -1,45 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Registrasi Pencari Kos</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="./styles/login.css" />
+<html>
+ <head>
+  <title>
+  Detail-kos
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./styles/home.css" />
 </head>
-<body>
-    <div class="register-container">
-        <div class="register-box">
-            <h2>Form Registrasi Pencari Kos</h2>
-            <form id="registerForm">
-                <div class="input-group">
-                    <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Nama" required>
-                </div>
-                <div class="input-group">
-                    <i class="fas fa-envelope"></i>
-                    <input type="email" placeholder="Email" required>
-                </div>
-                <div class="input-group">
-                    <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Kata Sandi" required>
-                </div>
-                <button type="submit" id="registerButton" class="register-button">Daftar</button>
-            </form>
+ <body>
+    <nav class="navbar">
+        <div class="left-section">
+            <div class="logo">Papi Kos</div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input placeholder="cari tempat, nama kos" type="text" />
+            </div>
         </div>
+        
+        <div class="filters-container">
+            <div class="filters">
+                <button>Kos Laki Laki</button>
+                <button>Kos Perempuan</button>
+                <button>Kos Kamar Mandi Dalam</button>
+                <button>Kos Murah</button>
+            </div>
+            <a class="login-button" href="login.html">Masuk</a>
+        </div>
+    </nav>
+  <div class="content">
+   <div class="left">
+    <img alt="Room Image" height="400" src="https://storage.googleapis.com/a1aa/image/R0xSyHI2is4yN1T0f7qQMUzfxd5DfCSHjSihmMMM6FdGCbLnA.jpg" width="600"/>
+    <div class="image-options">
+     <button>
+      Foto
+     </button>
+     <button>
+      Video
+     </button>
     </div>
-
-    <script>
-        document.getElementById('registerForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            if (this.checkValidity()) {
-                window.location.href = "home.html";  
-            } else {
-                alert("Harap isi semua data dengan benar.");
-            }
-        });
-    </script>
-</body>
+    <div class="title">
+    Kost Singgahsini Pak Ali 
+    </div>
+    <div class="subtitle">
+        Kos Terbaik dan Ternyaman se-Malang Raya
+    </div>
+    <div class="details">
+     <i class="fas fa-home">
+     </i>
+     Kos Campur
+     <i class="fas fa-map-marker-alt">
+     </i>
+     Lowokwaru, Malang
+    </div>
+    <div class="reviews-section">
+        <h3>Ulasan Pengguna</h3>
+        <ul class="reviews">
+            <li>
+                <strong>Andi:</strong> "Kos ini sangat nyaman dan bersih, lokasinya strategis."
+            </li>
+            <li>
+                <strong>Siti:</strong> "Pemilik kos sangat ramah dan fasilitasnya lengkap."
+            </li>
+            <li>
+                <strong>Budi:</strong> "Harganya terjangkau dengan kualitas yang baik."
+            </li>
+        </ul>
+    </div>
+   </div>
+   <div class="right">
+    <div class="small-images">
+     <img alt="Small Room Image 1" height="200" src="https://storage.googleapis.com/a1aa/image/SDCAbxJqZ1LeDC9B9vfBnCHhOOVeoAvXfqOKGfju4K8sxttcC.jpg" width="300"/>
+     <img alt="Small Room Image 2" height="200" src="https://storage.googleapis.com/a1aa/image/BpSLnT1OtQIrKlc3ZklJcbmaqOcxh0YpuPdUJnTOpO3jbb5E.jpg" width="300"/>
+    </div>
+    <div class="price-section">
+     <div class="price">
+        RP. 600.000,00
+      <span>
+       /bulan
+      </span>
+     </div>
+     <div class="fasilitas">
+        <h3>Fasilitas Kos</h3>
+        <ul>
+            <li>
+                Kamar Mandi Dalam
+            </li>
+            <li>
+                AC
+            </li>
+            <li>
+                Wifi
+            </li>
+            <li>
+                Balcon
+            </li>
+        </ul>
+     </div>
+     <div class="buttons">
+      <button class="contact-owner">
+       Hubungi Pemilik Kos
+      </button>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
 </html>
