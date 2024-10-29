@@ -1,0 +1,198 @@
+<html>
+<head>
+    <title>Papi Kos</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./styles/home.css" />
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="left-section">
+            <div class="logo">Papi Kos</div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input placeholder="cari tempat, nama kos" type="text" />
+            </div>
+        </div>
+        
+        <div class="filters-container">
+            <div class="filters">
+                <button onclick="filterCards('laki-laki')">Kos Laki Laki</button>
+                <button onclick="filterCards('perempuan')">Kos Perempuan</button>
+                <button onclick="filterCards('dalam')">Kos Kamar Mandi Dalam</button>
+                <button onclick="filterCards('murah')">Kos Murah</button>
+                <button onclick="filterCards('all')">Semua</button> 
+            </div>
+            <a class="login-button" href="login.html">Masuk</a>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="card" data-category="laki-laki">
+            <a href="detail-kos.html">
+            <img alt="Image of a modern building with palm trees" 
+                 height="200" 
+                 src="https://storage.googleapis.com/a1aa/image/6R57rIpVfV2jXS8KgQpTh02jGbDmIeIIff15bzPd62bsteVcC.jpg" 
+                 width="300"/>
+            </a>
+            <div class="info">
+                <h3>Kost Singgahsini Pak Ali Lowokwaru Malang 694517AP</h3>
+                <p>Lowokwaru, Malang 694517AP</p>
+                <div class="details">
+                    <div class="price">RP. 600.000,00</div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i> 4.9
+                    </div>
+                </div>
+                <div class="icons">
+                    <span><i class="fas fa-map-marker-alt"></i> Lowokwaru, Malang</span>
+                    <span><i class="fas fa-bed"></i> 2 Kamar</span>
+                    <span><i class="fas fa-venus-mars"></i> Kos Campur</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-category="perempuan">
+            <a href="detail-kos.html">
+                <img alt="Image of a modern building with palm trees" 
+                     height="200" 
+                     src="https://storage.googleapis.com/a1aa/image/6R57rIpVfV2jXS8KgQpTh02jGbDmIeIIff15bzPd62bsteVcC.jpg" 
+                     width="300"/>
+                </a>
+            <div class="info">
+                <h3>Kost Singgahsini Pak Ali Lowokwaru Malang 694517AP</h3>
+                <p>Lowokwaru, Malang 694517AP</p>
+                <div class="details">
+                    <div class="price">RP. 800.000,00</div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i> 4.9
+                    </div>
+                </div>
+                <div class="icons">
+                    <span><i class="fas fa-map-marker-alt"></i> Lowokwaru, Malang</span>
+                    <span><i class="fas fa-bed"></i> 2 Kamar</span>
+                    <span><i class="fas fa-venus-mars"></i> Kos Campur</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-category="dalam">
+            <a href="detail-kos.html">
+                <img alt="Image of a modern building with palm trees" 
+                     height="200" 
+                     src="https://storage.googleapis.com/a1aa/image/6R57rIpVfV2jXS8KgQpTh02jGbDmIeIIff15bzPd62bsteVcC.jpg" 
+                     width="300"/>
+                </a>
+            <div class="info">
+                <h3>Kost Singgahsini Pak Ali Lowokwaru Malang 694517AP</h3>
+                <p>Lowokwaru, Malang 694517AP</p>
+                <div class="details">
+                    <div class="price">RP. 800.000,00</div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i> 4.9
+                    </div>
+                </div>
+                <div class="icons">
+                    <span><i class="fas fa-map-marker-alt"></i> Lowokwaru, Malang</span>
+                    <span><i class="fas fa-bed"></i> 2 Kamar</span>
+                    <span><i class="fas fa-venus-mars"></i> Kos Campur</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-category="murah">
+            <a href="detail-kos.html">
+                <img alt="Image of a modern building with palm trees" 
+                     height="200" 
+                     src="https://storage.googleapis.com/a1aa/image/6R57rIpVfV2jXS8KgQpTh02jGbDmIeIIff15bzPd62bsteVcC.jpg" 
+                     width="300"/>
+                </a>
+            <div class="info">
+                <h3>Kost Singgahsini Pak Ali Lowokwaru Malang 694517AP</h3>
+                <p>Lowokwaru, Malang 694517AP</p>
+                <div class="details">
+                    <div class="price">RP. 600.000,00</div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i> 4.9
+                    </div>
+                </div>
+                <div class="icons">
+                    <span><i class="fas fa-map-marker-alt"></i> Lowokwaru, Malang</span>
+                    <span><i class="fas fa-bed"></i> 2 Kamar</span>
+                    <span><i class="fas fa-venus-mars"></i> Kos Campur</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" data-category="murah">
+            <a href="detail-kos.html">
+                <img alt="Image of a modern building with palm trees" 
+                     height="200" 
+                     src="https://storage.googleapis.com/a1aa/image/6R57rIpVfV2jXS8KgQpTh02jGbDmIeIIff15bzPd62bsteVcC.jpg" 
+                     width="300"/>
+                </a>
+            <div class="info">
+                <h3>Kost Singgahsini Pak Ali Lowokwaru Malang 694517AP</h3>
+                <p>Lowokwaru, Malang 694517AP</p>
+                <div class="details">
+                    <div class="price">RP. 600.000,00</div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i> 4.9
+                    </div>
+                </div>
+                <div class="icons">
+                    <span><i class="fas fa-map-marker-alt"></i> Lowokwaru, Malang</span>
+                    <span><i class="fas fa-bed"></i> 2 Kamar</span>
+                    <span><i class="fas fa-venus-mars"></i> Kos Campur</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-category="murah">
+            <a href="detail-kos.html">
+                <img alt="Image of a modern building with palm trees" 
+                     height="200" 
+                     src="https://storage.googleapis.com/a1aa/image/6R57rIpVfV2jXS8KgQpTh02jGbDmIeIIff15bzPd62bsteVcC.jpg" 
+                     width="300"/>
+                </a>
+            <div class="info">
+                <h3>Kost Singgahsini Pak Ali Lowokwaru Malang 694517AP</h3>
+                <p>Lowokwaru, Malang 694517AP</p>
+                <div class="details">
+                    <div class="price">RP. 600.000,00</div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i> 4.9
+                    </div>
+                </div>
+                <div class="icons">
+                    <span><i class="fas fa-map-marker-alt"></i> Lowokwaru, Malang</span>
+                    <span><i class="fas fa-bed"></i> 2 Kamar</span>
+                    <span><i class="fas fa-venus-mars"></i> Kos Campur</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function filterCards(category) {
+            // digunakan untuk mengambil semua car
+            const cards = document.querySelectorAll('.card');
+
+            // digunakan untuk menyembunyikan atau mengambil card sesuai dengan kategori yang dipilih
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.classList.remove('hidden'); // menampilkan semua card
+                } else {
+                    const cardCategory = card.getAttribute('data-category'); // Ambil kategori dari card
+                    if (cardCategory === category) {
+                        card.classList.remove('hidden'); // menampilkan card 
+                    } else {
+                        card.classList.add('hidden'); // menyembunyikan card 
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
